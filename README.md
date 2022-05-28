@@ -1,7 +1,9 @@
 # zeroadminpersistence
 Grants persistent remote access without admin rights
 
-1. Load everything into the root of a flash drive.
+Note: This method is based on the common misconfiguration which allows standard user accounts to install python via the Windows Store.
+
+1. Load everything into the root of a flash drive or single folder.
 2. Edit the rs.bat file and replace "0.0.0.0(replace with attacker IP)" with your attacking IP address.
 3. Edit client.py to set the desired port. (IP addres is set on the command line in rs.bat not in the python script.
 4. Edit server.py to set the desired port.
