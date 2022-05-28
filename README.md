@@ -10,3 +10,6 @@ Note: This method is based on the common misconfiguration which allows standard 
 5. Start server.py on attacker computer.
 6. Plug flash drive into victim PC and launch "dropper.bat".
 7. This should establish the connection as soon as it's run and reestablish the connection every time the remote computer is rebooted.
+
+
+Code and steps used to create server.py and client.py can be found here: https://www.thepythoncode.com/article/create-reverse-shell-python
