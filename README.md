@@ -1,5 +1,5 @@
 # zeroadminpersistence
-Grants persistent remote access without admin rights
+Grants persistent remote access without admin rights while hiding all command prompts from the user.
 
 Note: This method is based on the common misconfiguration which allows standard user accounts to install python via the Windows Store.
 
