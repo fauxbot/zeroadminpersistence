@@ -1,7 +1,15 @@
 # zeroadminpersistence
-Grants persistent remote access without admin rights while hiding all command prompts from the user.
+Basic batch file that can be used with a ducky or manually executed that grants persistent remote access without admin rights while hiding all prompts from the user with SilentCMD.
 
-Note: This method is based on the common misconfiguration which allows standard user accounts to install python via the Windows Store.
+What it's doing:
+
+1. Makes a directory at C:\Users\%USERNAME%\AppData\Roaming\Startup
+2. Copies the contents of the "Startup" directory from the flash drive to the directory above.
+3. Copies launch.bat from the flash drive to the current users local startup directory (C:\Users\LTLKiosk\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup)
+4. Starts the script to grant immediate access. 
+5. The script will run every time the computer starts.
+
+Note: This method is based on the common misconfiguration that allows a standard user account to install python via the Windows Store.
 
 1. Load everything into the root of a flash drive or single folder.
 2. Edit the rs.bat file and replace "0.0.0.0(replace with attacker IP)" with your attacking IP address.
